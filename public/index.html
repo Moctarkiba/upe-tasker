@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>UPE-Tasker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Structure principale demandée -->
+    <main class="app-container">
+        <h1>UPE-Tasker : Suivi Universitaire</h1>
+        
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Saisir l'intitulé d'un nouveau projet..." required />
+            <button type="submit" id="btn-submit">Ajouter la tâche</button>
+        </form>
+
+        <section class="list-section">
+            <h2>Mes Tâches En Cours</h2>
+            <ul id="task-list">
+                <!-- Emplacement réservé pour l'injection algorithmique -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Liaison du script juste avant la fermeture du body -->
+    <script src="script.js"></script>
+</body>
+</html>
