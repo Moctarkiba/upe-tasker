@@ -3,46 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carré Bleu Personnalisé</title>
+    <title>UPE-Tasker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        
-        <!-- Le message principal au-dessus -->
-        <h1 class="message">Bonne arrivée</h1>
-        
-        <!-- Le grand carré bleu -->
-        <div class="grand-carre">
-            
-            <!-- 1. En haut à gauche : Vert -->
-            <div class="bloc-petit-carre">
-                <span class="nom-carre">Vert</span>
-                <div class="couleur-carre vert"></div>
-            </div>
+    <header>
+        <h1>UPE-Tasker</h1>
+        <p>Gestionnaire de tâches universitaire</p>
+    </header>
 
-            <!-- 2. En haut à droite : Jaune -->
-            <div class="bloc-petit-carre">
-                <span class="nom-carre">Jaune</span>
-                <div class="couleur-carre jaune"></div>
-            </div>
+    <main>
 
-            <!-- 3. En bas à gauche (sous le Vert) : Blanc -->
-            <div class="bloc-petit-carre">
-                <span class="nom-carre">Blanc</span>
-                <div class="couleur-carre blanc"></div>
-            </div>
+        <section id="task-form-section">
+            <h2>Ajouter une nouvelle tâche</h2>
+            <form>
+                <input type="text" placeholder="Titre de la tâche..." required>
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
 
-            <!-- 4. En bas à droite (sous le Jaune) : Noir -->
-            <div class="bloc-petit-carre">
-                <span class="nom-carre">Noir</span>
-                <div class="couleur-carre noir"></div>
-            </div>
-
-        </div>
-
-    </div>
+        <section id="task-list-section">
+            <h2>Mes Tâches</h2>
+            <ul id="task-list">
+                <li>Terminer le TP de développement Web</li>
+                <li>Designer qui lit le cours</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Université Privée de l'Estuaire.</p>
+    </footer>
 
 </body>
 </html>
